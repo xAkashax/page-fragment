@@ -5,90 +5,165 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kancelaria Adwokacka Orłowski Mikuliszyn Poks-Wielosik </title>
+  <title>Kancelaria Adwokacka Orłowski Mikuliszyn Poks-Wielosik</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/536ff07e99.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animation.css">
+  <script defer src="app.js"></script>
 </head>
 
-<body>
-  <header class="header">
+<body id="page-top">
 
-    <nav class="nav">
-      <img src="design/logo.png" class="nav__logo" id="logo" alt="logo">
-
-      <ul class="nav__links">
-        <li class="nav__item current">
-          <a href="#section--1" class="nav__link">Nasze DNA</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Zespół</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link nav__link-arrow">Nasze usługi prawne <img src="design/down.png" alt="down arrow"
-              class="arrow"> </a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Dobre porady</a>
-        </li>
-      </ul>
-
-      <a class="btn btn--contact">Kontakt<i class="fa-solid fa-arrow-right"></i></a>
-    </nav>
-
-    <div class="btn--know-us">
-      <p>Poznaj nas</p>
-      <button class="btn btn--header"><i class="fa-solid fa-arrow-down"></i></button>
-    </div>
-
-    <div class="header__title">
-      <section class="header__title-description">
-        <h1 class="first">Nie poddawaj się. <br />
-          <span class="second">Pozwól sobie pomóc.</span>
-        </h1>
-        <h6 class="header-description"><span> Nie jesteśmy dużą korporacją prawniczą</span>
-          tylko dynamicznym i młodym zespołem ludzi pełnych pasji.</h6>
-
-      </section>
-      <div class="img--header">
-        <img src="design/header_img.png" alt="header image" class="header__img">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-5">
+      <a class="navbar-brand me-lg-5" href="#page-top"><img src="design/logo.png" class="nav__logo" id="logo"
+          alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon img-fluid"><span></span><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav me-auto me-4 my-3 ml-auto my-lg-0">
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#section--1">Nasze DNA</a></li>
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#">Zespół</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link me-lg-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"> Nasze usługi prawne</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Usługa</a></li>
+              <li><a class="dropdown-item" href="#">Usługa</a></li>
+              <li><a class="dropdown-item" href="#">Usługa</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Dobre porady</a></li>
+        </ul>
+        <button class="btn button-style mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+          <span class="d-flex align-items-center">
+            <i class="bi-chat-text-fill me-2"></i>
+            <span class="small">Kontakt<i class="fa-solid fa-arrow-right"></i></span>
+          </span>
+        </button>
       </div>
-      <div class="office__description">
-        <div class="pointer"></div>
-        <div class="paragraphs">
-          <p class="paragraph-one">Kancelaria Adwokacka Orłowski Mikuliszyn Poks-Wielosik jest młodą i prężnie
-            rozwijającą
-            się
-            firmą adwokacką. Jesteśmy prawnikami z krwi i kości. Prawo dla Nas to tylko narzędzie do tego, aby
-            rozwiązywać
-            problemy.</p>
-          <p class="paragraph-two">Tak, jak rzeźbiarz kształtuje dłutem swoje dzieło, tak my tworzymy korzystne
-            rozwiązania
-            posługując się wiedzą o prawie. Droga zawodowa, jaką przebyliśmy pozwala nam działać w następujących
-            gałęziach
-            prawa: prawo karne, prawo cywilne, prawo handlowe, a także prawo nowych technologii.</p>
-          <button class="btn btn--DNA">Więcej o naszym DNA<i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </nav>
+
+  <!-- header-->
+  <header class="header">
+    <div class="container header-wrap px-5">
+      <img src="design/rectangle-white.svg" alt="white rectangle" class="white-rectangle">
+      <div class="row gx-5 align-items-center">
+        <div class="col-lg-6 d-flex align-items-stretch ">
+          <!-- header text and button-->
+          <div class="mb-5 mb-lg-0 text-center text-lg-start">
+            <h1 class="h1 mb-5 mt-lg-3 first">Nie poddawaj się. <span class="second">Pozwól sobie pomóc.</span></h1>
+            <p class="lead mb-5 mx-lg-5 "><span> Nie jesteśmy dużą korporacją prawniczą</span>
+              tylko dynamicznym i młodym zespołem ludzi pełnych pasji.</p>
+            <div class="d-flex flex-column flex-lg-column align-items-lg-start mt-5 btn--know-us">
+              <p>Poznaj nas</p>
+              <button class="button-style btn--header me-lg-3 mb-4 mb-lg-0"><i
+                  class="fa-solid fa-arrow-down"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <!-- header img-->
+          <div class="header-mockup image-header">
+            <div class="container-fluid image-header">
+              <img src="design/header_img.png" alt="header image" style="max-width: 100%; height: 100%"
+                class="header-img">
+              <img src="design/rectangle-yellow.svg" alt="yellow rectangle" class="yellow-rectangle">
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
   </header>
 
-  <section class="section" id="section--1">
-    <h2><span>Poznaj DNA </span>
-      naszej kancelarii</h2>
-    <img src="design/group_photo.png" alt="group photo" class="section__group">
-    <div class="section_description--comunication">
-      <h5>Komunikacja</h5>
-      <p>Pomyślne rozwiązanie sprawy w dużej mierze zależy od dobrej komunikacji między kancelarią adwokacką a Klientem.
-        <span> Prosty język i jasne komunikaty</span>
-        pozwalają odnieść szybkie i zadowalające efekty. Otwarta komunikacja jest kluczem do sukcesu.</p>
+  <section id="section--1">
+
+    <div class=" container px-5">
+
+      <div class="row gx-5 section-wrap ">
+
+        <div class="col-md-6 mb-5">
+
+          <div class="group-section">
+            <h2 class="font-alt"> <span>Poznaj DNA</span> naszej kancelarii
+            </h2>
+            <img src="design/group_photo.png" alt="group photo" class="section__group img-fluid">
+          </div>
+
+        </div>
+
+        <div class="col-md-6 mb-5">
+
+          <div class="office__description">
+            <div class="px-5 px-sm-0">
+              <img src="design/pointer.png" alt="pointer" class="img-fluid pointer-img">
+            </div>
+            <div class="col-12 col-lg-11 container-fluid paragraphs">
+              <p class="paragraph-one">Kancelaria Adwokacka Orłowski Mikuliszyn Poks-Wielosik jest młodą i prężnie
+                rozwijającą
+                się
+                firmą adwokacką. Jesteśmy prawnikami z krwi i kości. Prawo dla Nas to tylko narzędzie do tego, aby
+                rozwiązywać
+                problemy.</p>
+              <p class="paragraph-two">Tak, jak rzeźbiarz kształtuje dłutem swoje dzieło, tak my tworzymy
+                korzystne
+                rozwiązania
+                posługując się wiedzą o prawie. Droga zawodowa, jaką przebyliśmy pozwala nam działać w
+                następujących
+                gałęziach
+                prawa: prawo karne, prawo cywilne, prawo handlowe, a także prawo nowych technologii.</p>
+              <button class="btn btn--DNA button-style">Więcej o naszym DNA<i
+                  class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row section-wrap-two">
+
+        <div class="col-md-6 mb-5 mb-md-0">
+
+          <div class="text-start section_description">
+            <h3 class="font-alt">Komunikacja</h3>
+            <p class=" mb-5 mb-md-0">Pomyślne rozwiązanie sprawy w dużej mierze zależy od dobrej komunikacji
+              między kancelarią adwokacką a
+              Klientem.
+              <span class="span-strong"> Prosty język i jasne komunikaty</span>
+              pozwalają odnieść szybkie i zadowalające efekty. Otwarta komunikacja jest kluczem do sukcesu.</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-6  mb-5 mb-md-0">
+          <div class="text-center">
+            <img src="design/office.png" alt="office" class="section__office img-fluid">
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <img src="design/office.png" alt="office" class="section__office">
+
   </section>
 
 </body>
